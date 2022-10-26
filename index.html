@@ -49,7 +49,10 @@
                   </li>
                   <li>
                     <h4>Process:</h4>
-                    <p>Công thức: Lương = Lương 1 ngày * số ngày làm</p>
+                    <p>Công thức: Lương = Lương 1 ngày * số ngày làm<br/>
+                      Lương không được dưới 1000<br/>
+                      Số ngày làm không được dưới 1
+                    </p>
                   </li>
                   <li>
                     <h4>Output:</h4>
@@ -59,15 +62,15 @@
               </div>
               <div class="tab__input ">
                 <div class="row input__group ">
-                  <input class="col m-2 input" id="inputSalary"  type="number" placeholder="Nhập lương một ngày"  min="1">
-                  <input class="col m-2 input " id="inputWorkingDay"  type="number" placeholder="Số ngày làm" min="1">
+                  <input class="col m-2 input inputSalary" type="number" placeholder="Nhập lương một ngày"  min="1">
+                  <input class="col m-2 input inputSalary" type="number" placeholder="Số ngày làm" min="1">
                 </div>
                 <div class="result">
                   <button class="result__button"  onclick="resultSalary()">Tính lương</button>
                 </div>
               </div>
               <div class="tab__result">
-                <label class="">Kết quả là:</label>
+                <label>Kết quả là:</label>
                 <input type="text" id="resultSalary">
               </div>
             </div>
@@ -94,18 +97,18 @@
               <div class="tab__input ">
                 <div class="row input__group ">
                   <input class="col-sm-3 m-2 input number" value="1" type="number" id="number1" placeholder="Số thứ nhất" min="0">
-                  <input class="col-sm-3 m-2 input number" value="" type="numbe" id="number2" placeholder="Số thứ hai" min="0">
+                  <input class="col-sm-3 m-2 input number" value="19" type="numbe" id="number2" placeholder="Số thứ hai" min="0">
                   <input class="col-sm-3 m-2 input number" value="3" type="number" id="number3" placeholder="Số thứ ba" min="0">
                   <input class="col-sm-3 m-2 input number" value="4" type="number" id="number4" placeholder="Số thứ tư" min="0">
                   <input class="col-sm-3 m-2 input number"  value="5" type="number" id="number5" placeholder="Số thứ năm" min="0">
                 </div>
                 <div class="result">
-                  <button class="result__button">Tính trung bình</button>
+                  <button class="result__button" onclick="resultAverage()">Tính trung bình</button>
                 </div>
               </div>
               <div class="tab__result">
-                <label class="">Kết quả là:</label>
-                <input type="text">
+                <label>Kết quả là:</label>
+                <input type="text" id="resultAverage">
               </div>
             </div>
           </div>
@@ -137,7 +140,7 @@
                 </div>
               </div>
               <div class="tab__result">
-                <label class="">Kết quả là:</label>
+                <label>Kết quả là:</label>
                 <input type="text">
               </div>
             </div>
@@ -174,7 +177,7 @@
                 </div>
               </div>
               <div class="tab__result">
-                <label class="">Kết quả là:</label>
+                <label>Kết quả là:</label>
                 <input type="text">
               </div>
             </div>
@@ -214,7 +217,7 @@
                 </div>
               </div>
               <div class="tab__result">
-                <label class="">Kết quả là:</label>
+                <label>Kết quả là:</label>
                 <input type="text">
               </div>
             </div>
