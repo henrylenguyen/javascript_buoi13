@@ -25,7 +25,10 @@ main {
 li{
   list-style: none;
 }
-
+.nav-pills .nav-link.active{
+  color: #fff!important;
+  background-color: #dc4f72!important;
+}
 .container{
   height: 100vh;
 }

@@ -52,10 +52,10 @@ function checkNull(checked) {
 
 // func gọi nút tính lương
 
-function addStyle(name,string){
-   document.querySelector(name).value = 'dữ liệu không hợp lệ';
-   document.querySelector(name).style.border = ' 1px solid red';
-   document.querySelector(name).style.color = ' red';
+function addStyle(name, string) {
+  document.querySelector(name).value = string[0];
+  document.querySelector(name).style.border = string[1];
+  document.querySelector(name).style.color = string[2];
 }
 
 function resultSalary() {
@@ -67,10 +67,7 @@ function resultSalary() {
         // console.log(arr[i]);
 
       if (parseFloat(arr[i]) < 1000 || parseFloat(arr[i]+1)<1) {
-
-           document.querySelector('#resultSalary').value = 'dữ liệu không hợp lệ';
-           document.querySelector('#resultSalary').style.border = ' 1px solid red';
-           document.querySelector('#resultSalary').style.color = ' red';
+            addStyle("#resultSalary",["dữ liệu không hợp lệ", ' 1px solid red', 'red']);
           
       }
       else{
@@ -81,17 +78,14 @@ function resultSalary() {
           style: 'currency',
           currency: 'VND'
         }).format(result);
-        document.querySelector('#resultSalary').value = result;
-        document.querySelector('#resultSalary').style.border = ' 1px solid transparent';
-        document.querySelector('#resultSalary').style.color = ' #000';
+        addStyle('#resultSalary', [result,' 1px solid transparent', '#000']);
+
       }
       break;
  
     }
   } else {
-    document.querySelector('#resultSalary').value = 'Làm ơn nhập đầy đủ dữ liệu!!!';
-    document.querySelector('#resultSalary').style.border = ' 1px solid red';
-    document.querySelector('#resultSalary').style.color = ' red';
+    addStyle("#resultSalary", ['Làm ơn nhập đầy đủ dữ liệu!!!', ' 1px solid red', 'red']);
   }
 
 
