@@ -71,7 +71,7 @@
               </div>
               <div class="tab__result">
                 <label>Kết quả là:</label>
-                <input type="text" id="resultSalary">
+                <input type="text" id="resultSalary" disabled>
               </div>
             </div>
           </div>
@@ -96,11 +96,11 @@
               </div>
               <div class="tab__input ">
                 <div class="row input__group ">
-                  <input class="col-sm-3 m-2 input number" value="1" type="number" id="number1" placeholder="Số thứ nhất" min="0">
-                  <input class="col-sm-3 m-2 input number" value="19" type="numbe" id="number2" placeholder="Số thứ hai" min="0">
-                  <input class="col-sm-3 m-2 input number" value="3" type="number" id="number3" placeholder="Số thứ ba" min="0">
-                  <input class="col-sm-3 m-2 input number" value="4" type="number" id="number4" placeholder="Số thứ tư" min="0">
-                  <input class="col-sm-3 m-2 input number"  value="5" type="number" id="number5" placeholder="Số thứ năm" min="0">
+                  <input class="col-sm-3 m-2 input number" type="number" id="number1" placeholder="Số thứ nhất" min="1">
+                  <input class="col-sm-3 m-2 input number" type="numbe" id="number2" placeholder="Số thứ hai" min="1">
+                  <input class="col-sm-3 m-2 input number" type="number" id="number3" placeholder="Số thứ ba" min="1">
+                  <input class="col-sm-3 m-2 input number"  type="number" id="number4" placeholder="Số thứ tư" min="1">
+                  <input class="col-sm-3 m-2 input number"  type="number" id="number5" placeholder="Số thứ năm" min="1">
                 </div>
                 <div class="result">
                   <button class="result__button" onclick="resultAverage()">Tính trung bình</button>
@@ -108,7 +108,7 @@
               </div>
               <div class="tab__result">
                 <label>Kết quả là:</label>
-                <input type="text" id="resultAverage">
+                <input type="text" id="resultAverage" disabled>
               </div>
             </div>
           </div>
@@ -133,15 +133,15 @@
               </div>
               <div class="tab__input ">
                 <div class="row input__group ">
-                  <input class="input " type="number" placeholder="Nhập USD cần quy đổi" min="1">
+                  <input class="input money" type="number"  placeholder="Nhập USD cần quy đổi" min="1">
                 </div>
                 <div class="result">
-                  <button class="result__button">Quy đổi</button>
+                  <button class="result__button" onclick="resultMoney();">Quy đổi</button>
                 </div>
               </div>
               <div class="tab__result">
                 <label>Kết quả là:</label>
-                <input type="text">
+                <input type="text" id="resultMoney" disabled>
               </div>
             </div>
           </div>
@@ -169,16 +169,16 @@
               </div>
               <div class="tab__input ">
                 <div class="row input__group ">
-                  <input class="col m-2 input " type="number" placeholder="Nhập chiều dài" min="1">
-                  <input class="col m-2 input" type="number" placeholder="Số chiều rộng" min="1">
+                  <input class="col m-2 input rectangle" type="number" placeholder="Nhập chiều dài" min="1">
+                  <input class="col m-2 input rectangle" type="number" placeholder="Số chiều rộng" min="1">
                 </div>
                 <div class="result">
-                  <button class="result__button">Tính</button>
+                  <button class="result__button" onclick="resultRectangle()">Tính</button>
                 </div>
               </div>
               <div class="tab__result">
                 <label>Kết quả là:</label>
-                <input type="text">
+                <input type="text" id="resultRectangle" disabled>
               </div>
             </div>
           </div>
@@ -210,15 +210,15 @@
               </div>
               <div class="tab__input ">
                 <div class="row input__group ">
-                  <input class="col input " type="number" placeholder="Nhập số cần tính tổng" min="10">
+                  <input class="col input sumNumber" type="number" placeholder="Nhập số cần tính tổng" min="10">
                 </div>
                 <div class="result">
-                  <button class="result__button">Tính tổng</button>
+                  <button class="result__button" onclick="ResultsumNumber()">Tính tổng</button>
                 </div>
               </div>
               <div class="tab__result">
                 <label>Kết quả là:</label>
-                <input type="text">
+                <input type="text" id="ResultsumNumber" disabled>
               </div>
             </div>
           </div>
@@ -230,6 +230,10 @@
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<script  src="./app.js"></script>
+<script  src="./bai1.js"></script>
+<script  src="./bai2.js"></script>
+<script  src="./bai3.js"></script>
+<script  src="./bai4.js"></script>
+<script  src="./bai5.js"></script>
 </body>
 </html>
